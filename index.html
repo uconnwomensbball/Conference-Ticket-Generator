@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Conference Ticket Generator</title>
+        <link rel="stylesheet" href="/index.css">
+    </head>
+    <body>
+        <img class = "squiggly-line-top" src = "./images/pattern-squiggly-line-top.svg"/>
+        <div class = "header-div">
+            <img class = "header-svg" src="./images/logo-mark.svg"/>
+            <p>Coding Conf</p>
+        </div>
+        <main id = "main">
+            <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
+            <p>Secure your spot at next year's biggest coding conference.</p>
+            <form id = "form" class = "form">
+                <div id = "individual-inputs" class = "individual-inputs">
+                    <label>Upload Avatar</label>
+                    <div id = "upload-avatar-div" class = "upload-avatar-div">
+                        <img id = "upload-image-btn-one" class = "image-upload-svg" src="./images/icon-upload.svg"/>
+                        <input type="file" id="file-input" name="image"accept="image/*" style="display: none"/>
+                        <label for="fileInput">Drag and drop or click to upload</input>
+                    </div>
+                </div>
+                <div class = "upload-photo-div">
+                    <img class = "warning-icon" src="./images/icon-info.svg"/>
+                    <p id = "warning-photo-text">Upload your photo (JPG or PNG, max size: 500KB).</p>
+                </div>
+                <div class = "individual-inputs">
+                    <label for ="full-name-input" type = "name"><small>Full Name</small></label>
+                    <input id = "full-name-input" name = "full-name"/>
+                    <div id = "warning-name-div">
+                        <img class = "warning-icon" src="./images/icon-info.svg"/>
+                        <p id = "warning-name-text">Please enter your full name</p>
+                    </div>
+                </div>
+                <div class = "individual-inputs">
+                    <label for ="email-input"><small>Email Address</small></label>
+                    <input id = "email-input" name = "email" type = "email"/>
+                    <div id = "warning-email-div">
+                        <img class = "warning-icon" src="./images/icon-info.svg"/>
+                        <p id = "warning-email-text">Please enter a valid email address</p>
+                    </div>
+                </div>
+                <div class = "individual-inputs">
+                    <label for = "github-username-input"><small>GitHub Username</small></label>
+                    <input id = "github-username-input"/>
+                    <div id = "warning-gitHub-div">
+                     <img class = "warning-icon" src="./images/icon-info.svg"/>
+                     <p id = "warning-gitHub-text">Please enter a valid GitHub usename</p>
+                    </div>
+                </div>
+                <button id = "generate-ticket-btn">Generate My Ticket</button>
+            </form>
+       
+        </main>
+         <img class = "squiggly-line-bottom" src = "./images/pattern-squiggly-line-bottom.svg"/>
+        <script type="module" src="/index.js"></script>
+    </body>
+</html>

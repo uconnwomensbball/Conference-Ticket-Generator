@@ -1,0 +1,289 @@
+@font-face {
+    font-family: 'InconsolataFont';
+    src: url('./InconsolataFont.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'InconsolataFont', Arial, Helvetica, sans-serif;
+    background-image: url("./images/background-desktop.png");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    color: white;
+    text-align: center;
+    display: flex; 
+    flex-direction: column;
+    margin: auto; 
+    padding: 10px 10px 0px 10px; 
+    max-width: 500px; 
+    min-width: 320px;}
+
+main{
+    height: 100vh; 
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+/*DIVS*/
+.header-div{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;  
+}
+
+.warning-divs{
+    display: none; 
+}
+
+.form{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload-avatar-div{
+    border: 2px dashed hsl(245, 19%, 35%); 
+    border-radius: 5px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    padding: 15px; 
+     width: 250px; 
+     text-align: center;
+}
+
+.upload-photo-div{
+    display: flex; 
+    justify-content: flex-start;
+
+    gap: 5px; 
+ 
+    flex-wrap: no-wrap;
+    margin-top: -5px; 
+    width: 285px;
+    margin-bottom: 10px;
+      
+}
+
+.uploaded-image{
+    width: 50px;
+    height: 50px; 
+    border-radius: 5px; 
+}
+
+.image-btns-div{
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;  
+}
+
+#remove-image-p, #change-image-p{
+    border: 2px solid hsl(245, 19%, 35%);
+    border-radius: 5px; 
+    padding: 5px; 
+    margin-bottom: 0px; 
+}
+
+#remove-image-p:hover, #change-image-p:hover{
+    background-color: hsl(245, 19%, 35%);
+}
+
+#warning-gitHub-div{
+    display: none; 
+    flex-direction: row; 
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;    
+}
+
+.upload-photo-div>p, #warning-name-text, #warning-email-text, #warning-gitHub-text{
+    margin: 0px 0px 5px 0px ;
+    font-size: .75rem;   
+}
+
+#warning-name-text, #warning-email-text, #warning-gitHub-text{
+    color: hsl(7, 88%, 67%);
+}
+
+/*TICKET*/
+.ticket-content-container{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   margin-left: auto; 
+   margin-right: auto; 
+   width: 300px; 
+   margin-top: 50px; 
+}
+
+.ticket-content-div{
+    margin: 30px 0px 0px 10px;  
+}
+
+.ticket-content-div-row{
+    display: flex; 
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;   
+}
+
+.ticket-content-div-column{
+    display: flex; 
+    flex-direction: column; 
+    align-items: left; 
+    }
+
+.ticket-container-lower{
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+    gap: 10px; 
+    margin-top: 20px; 
+    margin-bottom: -20px; 
+}
+
+.ticket-content-div-column>h4{
+    display: flex; 
+    flex-direction: column; 
+    margin-bottom: 0px; 
+    margin-top: 0px; 
+    }
+    
+.ticket-content-div-row>h2, .ticket-content-div-row>p, .ticket-content-div-row>h4{
+    margin: 3px; 
+}
+
+.avatar{
+    height: 45px; 
+    width: 45px;
+    border-radius: 5px; 
+}
+
+.github-data>p{
+    margin-left: -5px; 
+}
+
+.ticket-nums{
+    position: relative;
+    left: 268px;
+    top: -65px; 
+    transform: rotate(90deg);
+}
+
+/*INPUTS*/
+.individual-inputs{
+    display: flex; 
+    flex-direction: column; 
+    margin-bottom: 15px;
+    gap: 7px;  
+    text-align: left;
+   
+}
+
+input{
+    border-radius: 7px;
+    border: hsl(245, 19%, 35%); 
+    padding: 6px; 
+    font-family: 'InconsolataFont', Arial, Helvetica, sans-serif;
+    width: 270px; 
+    cursor: pointer; 
+}
+
+/*BUTTONS*/
+button{
+    background-color: hsl(7, 88%, 67%);
+    font-family: 'InconsolataFont', Arial, Helvetica, sans-serif;
+    font-weight: 700; 
+    font-size: .75rem;
+    border-radius: 7px;
+    border: none;
+    padding: 10px 50px; 
+    width: 282px; 
+    margin-top: 10px; 
+    cursor: pointer;
+}
+
+#upload-image-btn-one, #upload-image-btn-two, #remove-image-p, #change-image-p{
+    cursor: pointer;
+}
+ 
+/*WARNINGS*/
+#warning-name-div, #warning-email-div{
+    display: none; 
+    gap: 5px; 
+    }
+    
+#warning-name-div>p, #warning-email-div>p{
+    margin: 0px;}
+    
+
+.warning-icon{
+    height: 15px; 
+    width: 15px; 
+    color: hsl(7, 88%, 67%);
+}
+
+/*SVGs*/
+.header-svg{
+    width: 30px; 
+    height: 30px; 
+}
+
+.image-upload-svg{
+    width: 30px; 
+    height: 30px;
+    background-color: hsl(245, 19%, 35%); 
+    border-radius: 10px; 
+    padding: 5px; 
+    margin-bottom: 10px; 
+}
+
+.ticket-outline-svg{
+    position: absolute;
+    width: 320px; 
+}
+
+.squiggly-line-top{
+    position: absolute;
+    width: 60%;
+    right: 0px; 
+}
+
+.squiggly-line-bottom {
+    position: fixed; /* Keeps it at the bottom even on scroll */
+    width: 60%; /* Adjusts to screen width */
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/*COLORS*/
+.orange-one{
+    background-color: hsl(7, 88%, 67%)}
+
+.orange-text{
+    color: hsl(7, 88%, 67%)}
+    
+.gradient-text{
+     background: linear-gradient(to right, hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*DRAG AND DROP*/
+.drag-over {
+    background-color: hsl(245, 15%, 58%);
+}
