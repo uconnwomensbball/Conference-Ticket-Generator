@@ -154,7 +154,7 @@ fileInput.addEventListener("change", function () {
             uploadedImage =""
             dropZone.innerHTML = 
             `
-            <img id = "upload-image-btn-two" class = "image-upload-svg" src="/images/icon-upload.svg"/>
+            <img id = "upload-image-btn-two" class = "image-upload-svg" src="./images/icon-upload.svg"/>
             <input type="file" id="file-input" name="image" accept="image/*" style="display: none"/>
             <label for="fileInput">Drag and drop or click to upload</input>
             `
