@@ -63,7 +63,7 @@ event.preventDefault()
                 <div class = "ticket-content-div-column">
                     <h4>${formData.name}</h4>
                     <div class = "github-data ticket-content-div-row">
-                        <img class = "github-icon" src = "./images/icon-github.svg"/>
+                        <img class = "github-icon" src = ".images/icon-github.svg"/>
                         <p>@${formData.gitHub}</p>
                     </div>
                 </div>
